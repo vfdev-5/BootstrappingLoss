@@ -1,6 +1,6 @@
 # Bootstrapping loss function implementation
 based on "Training Deep Neural Networks on Noisy Labels with Bootstrapping"
-[https://arxiv.org/abs/1412.6596z](https://arxiv.org/abs/1412.6596)
+[https://arxiv.org/abs/1412.6596](https://arxiv.org/abs/1412.6596)
 
 
 ## Experiments on MNIST
@@ -12,7 +12,7 @@ cd examples && python3 mnist_with_tensorboardx.py --mode soft_bootstrap --noise_
 cd examples && python3 mnist_with_tensorboardx.py --mode xentropy --noise_fraction=0.45
 ```
 
-![img](examples/)
+![img](examples/experiments.png)
 
 ### Requirements:
 
