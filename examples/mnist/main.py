@@ -137,9 +137,10 @@ def run(
 
     # Setup output path
     suffix = ""
-    if mode == "soft_bootstrap" and not as_pseudo_label:
-         suffix = "as_xreg"
-    output_path = Path(log_dir) / "train_{}_{}_{}_{}".format(mode, noise_fraction, suffix, now)
+    if mode == "soft_bootstrap" and (as_pseudo_label is not None and not as_pseudo_label):
+        suffix = "as_xreg"
+    output_path = Path(log_dir) / "train_{}_{}_{}_{}__{}".format(mode, noise_fraction, suffix, now, num_epochs)
+
     if not output_path.exists():
         output_path.mkdir(parents=True)    
 
