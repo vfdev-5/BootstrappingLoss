@@ -16,7 +16,8 @@ cd examples/mnist && python main.py run --mode xentropy --noise_fraction=0.45
 cd examples/mnist && sh run_experiments.sh >> out 2> log
 ```
 
-- [Experiments on TRAINS](https://app.ignite.trains.allegro.ai/projects/276a39e824794d1093ecddd8b2afb8d0)
+- [Experiments on TRAINS](https://app.ignite.trains.allegro.ai/projects/276a39e824794d1093ecddd8b2afb8d0) 
+- `WITH_TRAINS=True sh run_experiments.sh >> out 2> log`
 
 ### Requirements:
 
